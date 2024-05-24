@@ -1,0 +1,64 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            58:08:5c:89:0f:91:4d:a9:1e:2f:56:b9:d5:96:f8:99
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C=CN, O=byd, CN=Sub CA
+        Validity
+            Not Before: May 17 03:59:51 2024 GMT
+            Not After : May 17 03:59:51 2025 GMT
+        Subject: C=CN, O=byd, CN=client/emailAddress=sec@byd.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0e:a7:38:6f:78:79:92:b4:1e:7e:65:49:76:fa:
+                    ea:b4:04:29:8f:a6:1f:09:25:0d:5a:36:cb:6c:6f:
+                    36:96:58:71:de:2a:62:81:15:b8:32:16:b0:b3:ae:
+                    c4:eb:d2:ed:fb:fa:af:91:ba:6e:8d:3e:03:60:f1:
+                    83:41:09:e8:c7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            Authority Information Access: 
+                CA Issuers - URI:http://sub-ca.example.com/sub-ca.crt
+                OCSP - URI:http://ocsp.sub-ca.example.com:9081
+
+            X509v3 Authority Key Identifier: 
+                keyid:97:11:92:8B:68:DC:6B:A2:68:74:34:CC:05:52:25:C2:53:1C:D3:86
+
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://sub-ca.example.com/sub-ca.crl
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Subject Key Identifier: 
+                EF:22:17:4A:41:8E:EE:A8:A8:D0:F7:1F:D5:12:F4:BB:C9:79:7E:B0
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:1b:40:b0:d7:85:9a:2d:91:9e:08:27:aa:16:c0:
+         63:37:f6:08:85:4e:be:6b:fc:9b:ea:5a:70:d3:15:cf:bd:1b:
+         02:21:00:c3:e8:12:0b:74:1e:f9:60:16:2a:b1:7f:0e:d3:b4:
+         68:8c:2f:bf:25:a7:68:88:bb:2e:e3:84:aa:41:41:90:6a
+-----BEGIN CERTIFICATE-----
+MIIClTCCAjugAwIBAgIQWAhciQ+RTakeL1a51Zb4mTAKBggqhkjOPQQDAjAsMQsw
+CQYDVQQGEwJDTjEMMAoGA1UECgwDYnlkMQ8wDQYDVQQDDAZTdWIgQ0EwHhcNMjQw
+NTE3MDM1OTUxWhcNMjUwNTE3MDM1OTUxWjBIMQswCQYDVQQGEwJDTjEMMAoGA1UE
+CgwDYnlkMQ8wDQYDVQQDDAZjbGllbnQxGjAYBgkqhkiG9w0BCQEWC3NlY0BieWQu
+Y29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDqc4b3h5krQefmVJdvrqtAQp
+j6YfCSUNWjbLbG82llhx3ipigRW4Mhaws67E69Lt+/qvkbpujT4DYPGDQQnox6OC
+ASEwggEdMHEGCCsGAQUFBwEBBGUwYzAwBggrBgEFBQcwAoYkaHR0cDovL3N1Yi1j
+YS5leGFtcGxlLmNvbS9zdWItY2EuY3J0MC8GCCsGAQUFBzABhiNodHRwOi8vb2Nz
+cC5zdWItY2EuZXhhbXBsZS5jb206OTA4MTAfBgNVHSMEGDAWgBSXEZKLaNxromh0
+NMwFUiXCUxzThjAMBgNVHRMBAf8EAjAAMDUGA1UdHwQuMCwwKqAooCaGJGh0dHA6
+Ly9zdWItY2EuZXhhbXBsZS5jb20vc3ViLWNhLmNybDATBgNVHSUEDDAKBggrBgEF
+BQcDAjAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0OBBYEFO8iF0pBju6oqND3H9US9LvJ
+eX6wMAoGCCqGSM49BAMCA0gAMEUCIBtAsNeFmi2RnggnqhbAYzf2CIVOvmv8m+pa
+cNMVz70bAiEAw+gSC3Qe+WAWKrF/DtO0aIwvvyWnaIi7LuOEqkFBkGo=
+-----END CERTIFICATE-----

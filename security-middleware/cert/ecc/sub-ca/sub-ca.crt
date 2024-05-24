@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            aa:fb:8f:89:88:61:21:e5:8f:52:39:23:fb:66:a7:6d
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C=CN, O=byd, CN=Root CA
+        Validity
+            Not Before: May 17 03:55:56 2024 GMT
+            Not After : May 15 03:55:56 2034 GMT
+        Subject: C=CN, O=byd, CN=Sub CA
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:fd:77:a0:27:48:d6:bc:d6:ca:23:3a:67:81:dd:
+                    f9:ff:09:6f:3d:cd:20:e1:e7:21:3a:e1:17:8e:81:
+                    63:4d:89:29:1f:da:55:b3:91:9d:d9:2d:68:7f:56:
+                    6b:45:7a:06:47:d6:ec:88:1b:94:45:8d:1e:eb:46:
+                    9f:05:e9:28:cf
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            Authority Information Access: 
+                CA Issuers - URI:http://root-ca.example.com/root-ca.crt
+                OCSP - URI:http://ocsp.root-ca.example.com:9080
+
+            X509v3 Authority Key Identifier: 
+                keyid:58:89:25:AC:69:14:39:8A:4F:E1:21:6A:6B:E9:DC:D7:9A:B7:83:50
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://root-ca.example.com/root-ca.crl
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, TLS Web Server Authentication
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Name Constraints: 
+                Permitted:
+                  DNS:example.com
+                  DNS:example.org
+                Excluded:
+                  IP:0.0.0.0/0.0.0.0
+                  IP:0:0:0:0:0:0:0:0/0:0:0:0:0:0:0:0
+
+            X509v3 Subject Key Identifier: 
+                97:11:92:8B:68:DC:6B:A2:68:74:34:CC:05:52:25:C2:53:1C:D3:86
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:cd:0c:d9:e3:44:bf:b3:f0:f2:1e:f9:10:f0:
+         6e:47:d7:3b:e6:92:21:99:b4:e0:9e:bf:32:3f:c9:7e:23:c8:
+         18:02:21:00:ab:08:cc:bd:54:e3:85:50:ab:fe:cf:a4:a4:f7:
+         90:5b:53:64:95:c5:1a:4c:ec:5c:66:e9:c6:05:df:18:e0:20
+-----BEGIN CERTIFICATE-----
+MIIC7jCCApOgAwIBAgIRAKr7j4mIYSHlj1I5I/tmp20wCgYIKoZIzj0EAwIwLTEL
+MAkGA1UEBhMCQ04xDDAKBgNVBAoMA2J5ZDEQMA4GA1UEAwwHUm9vdCBDQTAeFw0y
+NDA1MTcwMzU1NTZaFw0zNDA1MTUwMzU1NTZaMCwxCzAJBgNVBAYTAkNOMQwwCgYD
+VQQKDANieWQxDzANBgNVBAMMBlN1YiBDQTBZMBMGByqGSM49AgEGCCqGSM49AwEH
+A0IABP13oCdI1rzWyiM6Z4Hd+f8Jbz3NIOHnITrhF46BY02JKR/aVbORndktaH9W
+a0V6BkfW7IgblEWNHutGnwXpKM+jggGTMIIBjzB0BggrBgEFBQcBAQRoMGYwMgYI
+KwYBBQUHMAKGJmh0dHA6Ly9yb290LWNhLmV4YW1wbGUuY29tL3Jvb3QtY2EuY3J0
+MDAGCCsGAQUFBzABhiRodHRwOi8vb2NzcC5yb290LWNhLmV4YW1wbGUuY29tOjkw
+ODAwHwYDVR0jBBgwFoAUWIklrGkUOYpP4SFqa+nc15q3g1AwEgYDVR0TAQH/BAgw
+BgEB/wIBADA3BgNVHR8EMDAuMCygKqAohiZodHRwOi8vcm9vdC1jYS5leGFtcGxl
+LmNvbS9yb290LWNhLmNybDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEw
+DgYDVR0PAQH/BAQDAgEGMFsGA1UdHgRUMFKgHjANggtleGFtcGxlLmNvbTANggtl
+eGFtcGxlLm9yZ6EwMAqHCAAAAAAAAAAAMCKHIAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAMB0GA1UdDgQWBBSXEZKLaNxromh0NMwFUiXCUxzThjAKBggq
+hkjOPQQDAgNJADBGAiEAzQzZ40S/s/DyHvkQ8G5H1zvmkiGZtOCevzI/yX4jyBgC
+IQCrCMy9VOOFUKv+z6Sk95BbU2SVxRpM7Fxm6cYF3xjgIA==
+-----END CERTIFICATE-----

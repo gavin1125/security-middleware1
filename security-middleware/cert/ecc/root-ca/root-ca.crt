@@ -1,0 +1,45 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            aa:fb:8f:89:88:61:21:e5:8f:52:39:23:fb:66:a7:6c
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: C=CN, O=byd, CN=Root CA
+        Validity
+            Not Before: May 17 03:48:11 2024 GMT
+            Not After : May 15 03:48:11 2034 GMT
+        Subject: C=CN, O=byd, CN=Root CA
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6e:43:bd:73:f5:45:3b:81:1d:dd:88:ac:84:d1:
+                    75:7d:ac:fa:21:8d:4b:4f:bc:f9:5d:7a:10:a7:81:
+                    92:5e:ca:2d:3a:21:04:56:32:24:46:8a:20:ea:40:
+                    9d:8f:6f:77:28:08:ce:60:d6:c5:ad:7d:4f:fb:9f:
+                    b0:35:58:ce:7a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                58:89:25:AC:69:14:39:8A:4F:E1:21:6A:6B:E9:DC:D7:9A:B7:83:50
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:26:06:e4:72:e2:53:24:67:43:61:82:36:37:c5:
+         a4:55:c7:df:ba:5c:83:7a:e6:fb:0c:ec:87:f0:ce:c4:03:dc:
+         02:21:00:c1:15:c6:ea:bd:d9:a6:9e:33:99:a1:85:cb:af:af:
+         f8:12:92:63:09:ac:ae:20:cd:bb:25:e8:e9:bf:db:f1:90
+-----BEGIN CERTIFICATE-----
+MIIBmzCCAUGgAwIBAgIRAKr7j4mIYSHlj1I5I/tmp2wwCgYIKoZIzj0EAwIwLTEL
+MAkGA1UEBhMCQ04xDDAKBgNVBAoMA2J5ZDEQMA4GA1UEAwwHUm9vdCBDQTAeFw0y
+NDA1MTcwMzQ4MTFaFw0zNDA1MTUwMzQ4MTFaMC0xCzAJBgNVBAYTAkNOMQwwCgYD
+VQQKDANieWQxEDAOBgNVBAMMB1Jvb3QgQ0EwWTATBgcqhkjOPQIBBggqhkjOPQMB
+BwNCAARuQ71z9UU7gR3diKyE0XV9rPohjUtPvPldehCngZJeyi06IQRWMiRGiiDq
+QJ2Pb3coCM5g1sWtfU/7n7A1WM56o0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1Ud
+DwEB/wQEAwIBBjAdBgNVHQ4EFgQUWIklrGkUOYpP4SFqa+nc15q3g1AwCgYIKoZI
+zj0EAwIDSAAwRQIgJgbkcuJTJGdDYYI2N8WkVcffulyDeub7DOyH8M7EA9wCIQDB
+FcbqvdmmnjOZoYXLr6/4EpJjCayuIM27Jejpv9vxkA==
+-----END CERTIFICATE-----
