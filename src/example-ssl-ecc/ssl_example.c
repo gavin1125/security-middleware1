@@ -28,7 +28,7 @@ SSL_CTX *InitSSL(char *ca_path, char *client_crt_path, char *client_key_path) {
 //  SSL_CTX_set_cipher_list(ctx, "ECDHE-ECDSA-AES256-GCM-SHA384");
 
 
-  LoadCert(ctx, SECURITY_ENGINE_TYPE_GHY);
+  LoadCert(ctx, SECURITY_ENGINE_TYPE_GHY_RSA);
 
   int i = SSL_CTX_use_certificate_file(ctx, client_crt_path, SSL_FILETYPE_PEM);
   if (i <= 0) {
@@ -52,7 +52,7 @@ exit:
 }
 
 int main() {
-  LoadSecurityEngine(SECURITY_ENGINE_TYPE_GHY);
+  LoadSecurityEngine(SECURITY_ENGINE_TYPE_GHY_RSA);
 
   int sd;
   int confd = 0;
@@ -115,7 +115,7 @@ int main() {
 
   SSL_shutdown(ssl);
   shutdown(sd, 2);
-//  FreeSecurityEngine(SECURITY_ENGINE_TYPE_GHY);
+//  FreeSecurityEngine(SECURITY_ENGINE_TYPE_GHY_RSA);
 exit:
   if (sd > 0)
     close(sd);
@@ -124,7 +124,7 @@ exit:
   SSL_CTX_free(ctx);
   if (ssl)
     SSL_free(ssl);
-  //  FreeSecurityEngine(SECURITY_ENGINE_TYPE_GHY);
+  //  FreeSecurityEngine(SECURITY_ENGINE_TYPE_GHY_RSA);
 
   return 0;
 }

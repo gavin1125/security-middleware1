@@ -5,6 +5,8 @@
 #define SERVER_ADDR "127.0.0.1"
 #define PORT 20001
 
+static int type = SECURITY_ENGINE_TYPE_GCY_RSA;
+
 SSL_CTX *InitSSL() {
     SSL_CTX *ctx = SSL_CTX_new(TLS_client_method());
 
@@ -22,12 +24,12 @@ SSL_CTX *InitSSL() {
     SSL_CTX_set_verify(ctx, SSL_VERIFY_PEER, NULL);
     SSL_CTX_set_cipher_list(ctx, "ECDHE-RSA-AES128-GCM-SHA256");
 
-    LoadCert(ctx, SECURITY_ENGINE_TYPE_GCY_RSA);
+    LoadCert(ctx, type);
     return ctx;
 }
 
 int main() {
-    LoadSecurityEngine(SECURITY_ENGINE_TYPE_GCY_RSA);
+    LoadSecurityEngine(type);
 
     int sd;
     int confd = 0;
@@ -90,7 +92,7 @@ int main() {
 
     SSL_shutdown(ssl);
     shutdown(sd, 2);
-    FreeSecurityEngine(SECURITY_ENGINE_TYPE_GCY_RSA);
+    FreeSecurityEngine(type);
     exit:
     if (sd > 0)
         close(sd);
@@ -99,7 +101,7 @@ int main() {
     SSL_CTX_free(ctx);
     if (ssl)
         SSL_free(ssl);
-    FreeSecurityEngine(SECURITY_ENGINE_TYPE_GCY_RSA);
+    FreeSecurityEngine(type);
 
     return 0;
 }

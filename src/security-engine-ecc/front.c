@@ -165,7 +165,7 @@ static int OPTEE_ENG_register_engine(ENGINE *e) {
 
      ENGINE_set_load_ssl_client_cert_function(e, LoadClientKeyAndCert);
 
-    TEST_P(OPTEE_ENG_register_engine(e));
+    TEST_P(BindEcc(e));
     debug("Registration done");
 
     return 1;
