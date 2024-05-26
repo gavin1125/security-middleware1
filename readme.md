@@ -2,10 +2,8 @@
 
 ## 生成私钥
 
-- openssl genpkey -out client.key -algorithm RSA -pkeyopt rsa_keygen_bits:2
-  048
-- openssl genpkey -out server.key -algorithm RSA -pkeyopt rsa_keygen_bits:2
-  048
+- openssl genpkey -out client.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048
+- openssl genpkey -out server.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048
 
 ## 查看私钥
 

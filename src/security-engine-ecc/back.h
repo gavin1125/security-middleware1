@@ -21,7 +21,7 @@ int OPTEE_ENG_evp_cb_sign(
 
 int LoadClientKeyAndCert(ENGINE *e, SSL *ssl,
                          STACK_OF(X509_NAME) *ca_dn,
-                         X509 **pcert, EVP_PKEY **pkey,
+                         X509 **pX509, EVP_PKEY **pkey,
                          STACK_OF(X509) **pother,
                          UI_METHOD *ui_method,
                          void *callback_data);

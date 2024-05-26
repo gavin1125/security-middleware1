@@ -6,8 +6,9 @@ extern "C" {
 
 #include <openssl/engine.h>
 
-#define SECURITY_ENGINE_TYPE_GHY 0
-#define SECURITY_ENGINE_TYPE_GCY 1
+#define SECURITY_ENGINE_TYPE_GHY_RSA 0
+#define SECURITY_ENGINE_TYPE_GCY_RSA 1
+#define SECURITY_ENGINE_TYPE_GHY_ECC 2
 
 /**
  * @brief  load security engine
