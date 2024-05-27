@@ -5,7 +5,7 @@
 #define SERVER_ADDR "127.0.0.1"
 #define PORT 20001
 
-static int type = SECURITY_ENGINE_TYPE_GCY_RSA;
+static int type = SECURITY_ENGINE_TYPE_GHY_RSA;
 
 SSL_CTX *InitSSL() {
     SSL_CTX *ctx = SSL_CTX_new(TLS_client_method());

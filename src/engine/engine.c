@@ -5,30 +5,30 @@
 #include "sdf_interface.h"
 #include "rsa.h"
 #include "ecc.h"
+#include "log.h"
 
-#define UNUSED(x) (void)(x)
 #define GCY_RSA_SECURITY_ENGINE  "gcy_rsa_security_engine";
 #define GHY_RSA_SECURITY_ENGINE  "ghy_rsa_security_engine";
 #define GHY_ECC_SECURITY_ENGINE  "ghy_ecc_security_engine";
 
 
 static int EngineInit(ENGINE *e) {
-    UNUSED(e);
+    NOP(e);
     SdfInit();
-    printf("EngineInit\n");
+    info("EngineInit");
     return 1;
 }
 
 static int EngineFinish(ENGINE *e) {
-    UNUSED(e);
+    NOP(e);
     SdfFinish();
-    printf("EngineFinish\n");
+    info("EngineFinish");
     return 1;
 }
 
 
 static int EngineDestroy(ENGINE *e) {
-    UNUSED(e);
+    NOP(e);
     FreeRsaMethod();
     printf("EngineDestroy\n");
     return 1;
@@ -42,13 +42,13 @@ static int LoadClientKeyAndCert(ENGINE *e,
                                 STACK_OF(X509) **pother,
                                 UI_METHOD *ui_method,
                                 void *callback_data) {
-    UNUSED(e);
-    UNUSED(ssl);
-    UNUSED(ca_dn);
-    UNUSED(pother);
-    UNUSED(ui_method);
-    UNUSED(callback_data);
-    printf("LoadClientKeyAndCert\n");
+    NOP(e);
+    NOP(ssl);
+    NOP(ca_dn);
+    NOP(pother);
+    NOP(ui_method);
+    NOP(callback_data);
+    info("LoadClientKeyAndCert");
 
     X509 *cert = LoadClientCert();
     if (NULL == cert) {
@@ -107,7 +107,7 @@ int CheckType(int type) {
     if (type != SECURITY_ENGINE_TYPE_GHY_RSA &&
         type != SECURITY_ENGINE_TYPE_GCY_RSA &&
         type != SECURITY_ENGINE_TYPE_GHY_ECC) {
-        printf("engine error,type[%d] not correct\n", type);
+        info("engine error,type[%d] not correct", type);
         return 0;
     }
     return 1;
@@ -128,12 +128,12 @@ int LoadSecurityEngine(int type) {
 
     engine = ENGINE_new();
     if (NULL == engine) {
-        printf("load engine error,engine is NULL\n");
+        info("load engine error,engine is NULL");
         return 0;
     }
 
     if (!BindEngine(engine, type)) {
-        printf("load engine error,bind engine failed\n");
+        info("load engine error,bind engine failed");
         ENGINE_free(engine);
         return 0;
     }
@@ -141,7 +141,7 @@ int LoadSecurityEngine(int type) {
     ENGINE_add(engine);
     ENGINE_free(engine);
     ERR_clear_error();
-    printf("load engine success, engine type:%d\n", type);
+    info("load engine success, engine type:%d", type);
     return 1;
 }
 

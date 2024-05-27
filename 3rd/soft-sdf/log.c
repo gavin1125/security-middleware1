@@ -74,12 +74,12 @@ void LOG_Write(char* filepath, char* format, ...)
 #if defined(LINUX)
         strcpy(logpath, "/tmp");
 #elif defined(WIN32)
-        strcpy(logpath, "c:/tmp");
+        strcpy(log_path, "c:/tmp");
 #else
 #endif
     }
 
-    sprintf(logFile, "%s/%s", logpath, LOGNAME);
+    sprintf(logFile, "%s/%s", logpath, LOG_NAME);
     pFile = fopen(logFile, "ab+");//0666
     if (!pFile)
     {

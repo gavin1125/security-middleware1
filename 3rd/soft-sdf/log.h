@@ -10,7 +10,7 @@
 
 #define SOURCENAME "BYD_LOG"//系统日志资源名称
 
-#define LOGNAME    "softalg.log"
+#define LOG_NAME    "softalg.log"
 #define LOG_SEGMID "log"
 #define LOG_KEYID  "path"
 
